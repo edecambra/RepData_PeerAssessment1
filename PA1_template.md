@@ -115,7 +115,7 @@ median(new.total.steps$steps)
 ## [1] 10766
 ```
 ## Are there differences in activity patterns between weekdays and weekends?
-
+There seem to be differences in weekday patterns versus weekend patterns.  The graph denotes higher early morning activity during the weekdays, perhaps a morning jog before sitting down to do office work.  The weekends show lower peaks but more consistent activity throughout the day.  The "TRUE" panel denotes true for weekdays (M-F) and "FALSE" denotes the weekends (Sat - Sun).
 
 
 ```r

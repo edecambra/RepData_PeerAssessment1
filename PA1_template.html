@@ -285,6 +285,8 @@ hist(new.total.steps$steps)
 
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>
 
+<p>There seem to be differences in weekday patterns versus weekend patterns.  The graph denotes higher early morning activity during the weekdays, perhaps a morning jog before sitting down to do office work.  The weekends show lower peaks but more consistent activity throughout the day.  The &ldquo;TRUE&rdquo; panel denotes true for weekdays (M-F) and &ldquo;FALSE&rdquo; denotes the weekends (Sat - Sun).</p>
+
 <pre><code class="r">activity$weekday &lt;- as.factor(!(weekdays(activity$date) %in% c(&quot;Saturday&quot;, &quot;Sunday&quot;)))
 activity$weekend &lt;- as.factor(weekdays(activity$date) %in% c(&quot;Saturday&quot;, &quot;Sunday&quot;)) 
 require(lattice)
